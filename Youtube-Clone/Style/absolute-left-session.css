@@ -4,23 +4,34 @@
   bottom:0;
   width: 72px;
   position: fixed;
-  padding-top: 20px;
+  padding-top: 10px;
   background-color: white;
+  display:flex;
+  flex-direction: column;
+  z-index: 3;
 }
 
-.menu img,._menu img{
+.menu img,
+._menu img{
   width: 24px;
 }
-.menu p,._menu p{
+
+.menu div,
+._menu div{
   font-size: 10px;
-  font-family: Roboto,Arial;
   margin-top: 6px;
 }
+
 .menu,._menu{
   display:flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 74px;
 }
-._menu{
-  margin-top:21px
+
+.menu:hover ,
+._menu:hover{
+  background-color: rgb(235, 235, 235);
+  cursor: pointer;
 }
